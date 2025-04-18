@@ -8,22 +8,6 @@ A robust, deep learning-based plagiarism detection tool that analyzes **semantic
 
 ---
 
-## 🎥 Video Demo
-
-> 📽️ [Click here to watch the demo](https://www.youtube.com/watch?v=YOUR_VIDEO_LINK)
-
-<!-- Replace the link above with your actual video link -->
-
----
-
-## 🖼️ Screenshot
-
-![Web Interface](static/demo_screenshot.png)
-
-> A simple and clean UI to check plagiarism with one click.
-
----
-
 ## 🛠️ Features
 
 - ✅ Semantic-based plagiarism detection using SBERT
