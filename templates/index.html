@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 40px; }
+        h1 { color: #333; }
+        form { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Plagiarism Detector</h1>
+    <form method="post">
+        <label>Source Text:</label><br>
+        <textarea name="source_text" rows="5" required></textarea><br>
+
+        <label>Suspected Text:</label><br>
+        <textarea name="suspect_text" rows="5" required></textarea><br>
+
+        <button type="submit">Check Plagiarism</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <p>Result: {{ result }}</p>
+        <p>Confidence: {{ confidence }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
